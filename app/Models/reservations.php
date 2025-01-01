@@ -26,7 +26,7 @@ class reservations extends Model
         'reserveDate' => 'date',
         'reserveTime' => 'datetime',
     ];
-
+    // For connecting Rooms and Reserveations //
     public function rooms()
     {
         return $this->belongsTo(Rooms::class, 'roomid', 'id');
